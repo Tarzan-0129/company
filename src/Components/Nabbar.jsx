@@ -167,15 +167,6 @@ const Nabbar = () => {
               <span className="hover:cursor-pointer">
                 <Link to={"/softwaredevelopment"}>SoftwareDevelopment</Link>
               </span>
-              <span className="hover:cursor-pointer">Consultansy</span>
-              <span className="hover:cursor-pointer">Testing</span>
-              <span className="hover:cursor-pointer">Emerging</span>
-              <span className="hover:cursor-pointer">Cloud</span>
-              <span className="hover:cursor-pointer">Data Analytics</span>
-              <span className="hover:cursor-pointer">Staff Augmentation</span>
-              <span className="hover:cursor-pointer">
-                Projct Management Services
-              </span>
             </div>
           </div>
 
