@@ -43,7 +43,7 @@ function HeroCarousel() {
 
 
 
-{/* <div className="absolute top-10 sm:top-52 md:top-24 md:px-24 md:top lg:px-72 lg:top-52 flex sm:px-80 px-16 ">
+<div className="absolute top-10 sm:top-52 md:top-24 md:px-24 md:top lg:px-72 lg:top-52 flex sm:px-80 px-16 ">
               <div className="flex flex-col sm:gap-3  gap-2  lg:gap-3  lg:pb-10  py-8">
                 <span className="sm:text-5xl text-[13px] text-white font-bold lg:py-12 ">
                   Building careers. Building organisations.
@@ -82,7 +82,7 @@ function HeroCarousel() {
               src="/HeroCarousel-pics/DeWatermark.ai_1710827196818.jpg"
               className="d-block w-100"
               alt="..."
-            /> */}
+            /> 
 
 
 
@@ -104,7 +104,7 @@ function HeroCarousel() {
 
             
 
-{/* <div className="absolute sm:top-52 md:top-24 md:px-24 lg:px-72 lg:top-52    flex sm:px-80    top-12  left-14 right-14 flex-col  ">
+ <div className="absolute sm:top-52 md:top-24 md:px-24 lg:px-72 lg:top-52    flex sm:px-80    top-12  left-14 right-14 flex-col  ">
               <div className="flex flex-col sm:gap-3 gap-2 lg:gap-3  lg:pb-10 justify-center items-center">
                 <span className="sm:text-5xl lg:text-5xl md:text-2xl text-[14px] flex   text-5xl text-white font-bold   ">
                   An integral part of corporate India’s journey
@@ -160,7 +160,7 @@ function HeroCarousel() {
                   </span>
                 </div>
               </div>
-            </div> */}
+            </div>
 
 
 
@@ -181,7 +181,7 @@ function HeroCarousel() {
 
           </div>
         </div>
-        {/* <button
+        <button
           className="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleInterval"
@@ -204,7 +204,7 @@ function HeroCarousel() {
             aria-hidden="true"
           ></span>
           <span className="visually-hidden">Next</span>
-        </button> */}
+        </button>
       </div>
     </div>
   );
