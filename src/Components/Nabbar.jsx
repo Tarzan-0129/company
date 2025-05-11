@@ -61,9 +61,16 @@ const Nabbar = () => {
                   isService ? "max-h-60 py-3 " : "max-h-0 py-0"
                 }`}
               >
-                <span className="text-sm font-medium text-gray-900 dark:text-white">
+                <span className="">
                   <Link to={"/softwaredevelopment"}>SoftwareDevelopment</Link>
                 </span>
+                <span className="">Consultansy</span>
+                <span className="">Testing</span>
+                <span className="">Emerging</span>
+                <span className="">Cloud</span>
+                <span className="">Data Analytics</span>
+                <span className="">Staff Augmentation</span>
+                <span className="">Projct Management Services</span>
               </div>
             </div>
 
@@ -166,6 +173,15 @@ const Nabbar = () => {
             <div className="text-xs pt-1 px-2 pb-1 text-black group-hover:bg-white gap-2.5 absolute transition-all duration-200 flex flex-col group  max-h-0 overflow-hidden group-hover:max-h-72 w-44 ">
               <span className="hover:cursor-pointer">
                 <Link to={"/softwaredevelopment"}>SoftwareDevelopment</Link>
+              </span>
+              <span className="hover:cursor-pointer">Consultansy</span>
+              <span className="hover:cursor-pointer">Testing</span>
+              <span className="hover:cursor-pointer">Emerging</span>
+              <span className="hover:cursor-pointer">Cloud</span>
+              <span className="hover:cursor-pointer">Data Analytics</span>
+              <span className="hover:cursor-pointer">Staff Augmentation</span>
+              <span className="hover:cursor-pointer">
+                Projct Management Services
               </span>
             </div>
           </div>
