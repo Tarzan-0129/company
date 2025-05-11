@@ -4,7 +4,22 @@ function HeroCarousel() {
   return (
     <div className="relative w-full">
       <Nabbar />
-      <div
+      <iframe
+        title="Gumlet clean video"
+        src="https://play.gumlet.io/embed/682064c6a2826ae5397ec00d?autoplay=true&mute=true&controls=false&loop=true&preload=metadata&background=1"
+        style={{
+          border: "none",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          height: "100%",
+          width: "100%",
+        }}
+        loading="lazy"
+        allow="autoplay; encrypted-media"
+        allowFullScreen
+        ></iframe>
+      {/* <div
         id="carouselExampleInterval"
         className="carousel slide "
         data-bs-ride="carousel"
@@ -19,22 +34,7 @@ function HeroCarousel() {
               src="/HeroCarousel-pics/DeWatermark.ai_1710827225330.jpg"
               className="d-block w-100 w-full"
               alt="..."
-            /> */}
-            <iframe
-            title="Gumlet clean video"
-            src="https://play.gumlet.io/embed/682064c6a2826ae5397ec00d?autoplay=true&mute=true&controls=false&loop=true&preload=metadata&background=1"
-            style={{
-              border: "none",
-              position: "absolute",
-              top: 0,
-              left: 0,
-              height: "100%",
-              width: "100%",
-            }}
-            loading="lazy"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          ></iframe>
+            /> */} 
 
 
 
@@ -42,7 +42,8 @@ function HeroCarousel() {
 
 
 
-<div className="absolute top-10 sm:top-52 md:top-24 md:px-24 md:top lg:px-72 lg:top-52 flex sm:px-80 px-16 ">
+
+{/* <div className="absolute top-10 sm:top-52 md:top-24 md:px-24 md:top lg:px-72 lg:top-52 flex sm:px-80 px-16 ">
               <div className="flex flex-col sm:gap-3  gap-2  lg:gap-3  lg:pb-10  py-8">
                 <span className="sm:text-5xl text-[13px] text-white font-bold lg:py-12 ">
                   Building careers. Building organisations.
@@ -81,29 +82,8 @@ function HeroCarousel() {
               src="/HeroCarousel-pics/DeWatermark.ai_1710827196818.jpg"
               className="d-block w-100"
               alt="..."
-            />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-<div className="absolute sm:top-52 md:top-24 md:px-24 lg:px-72 lg:top-52    flex sm:px-80    top-12  left-14 right-14 flex-col  ">
+            /> */}
+{/* <div className="absolute sm:top-52 md:top-24 md:px-24 lg:px-72 lg:top-52    flex sm:px-80    top-12  left-14 right-14 flex-col  ">
               <div className="flex flex-col sm:gap-3 gap-2 lg:gap-3  lg:pb-10 justify-center items-center">
                 <span className="sm:text-5xl lg:text-5xl md:text-2xl text-[14px] flex   text-5xl text-white font-bold   ">
                   An integral part of corporate India’s journey
@@ -113,7 +93,6 @@ function HeroCarousel() {
                   and leadership professionals
                 </span>
               </div>
-
               <div className=" flex flex-row  pt-1 justify-between">
                 <div className=" w-1/5 flex flex-col items-center justify-center text-center">
                   <div className=" backdrop-blur-sm flex justify-center font-bold items-center text-white sm:text-2xl  rounded-full sm:w-28  sm:h-28 text-[12px] h-5 w-5  md:text-lg  md:w-14 md:h-14 lg:text-2xl lg:w-28 lg:h-28">
@@ -125,7 +104,6 @@ function HeroCarousel() {
                     Years of market leadership
                   </span>
                 </div>
-
                 <div className=" w-1/5 flex flex-col items-center justify-center text-center">
                   <div className=" backdrop-blur-sm flex justify-center font-bold items-center text-white sm:text-2xl rounded-full sm:w-28 sm:h-28  text-[12px] h-5 w-5   md:text-lg  md:w-14 md:h-14 lg:text-2xl lg:w-28 lg:h-28">
                     <span>
@@ -136,7 +114,6 @@ function HeroCarousel() {
                     Careers built to date
                   </span>
                 </div>
-
                 <div className=" w-1/5 flex flex-col items-center justify-center text-center">
                   <div className="backdrop-blur-sm flex justify-center font-bold items-center text-white sm:text-2xl rounded-full sm:w-28 sm:h-28 text-[12px] h-5 w-5  md:text-lg  md:w-14 md:h-14 lg:text-2xl lg:w-28 lg:h-28">
                     <span>
@@ -147,7 +124,6 @@ function HeroCarousel() {
                     Consultants pan India 21
                   </span>
                 </div>
-
                 <div className=" w-1/5 flex flex-col items-center justify-center text-center">
                   <div className="backdrop-blur-sm flex justify-center font-bold items-center text-white  sm:text-2xl rounded-full sm:w-28 sm:h-28 text-[12px] h-5 w-5  md:text-lg  md:w-14 md:h-14 lg:text-2xl lg:w-28 lg:h-28">
                     <span>
@@ -160,27 +136,9 @@ function HeroCarousel() {
                 </div>
               </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           </div>
-        </div>
-        <button
+        </div> */}
+        {/* <button
           className="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleInterval"
@@ -204,7 +162,7 @@ function HeroCarousel() {
           ></span>
           <span className="visually-hidden">Next</span>
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
