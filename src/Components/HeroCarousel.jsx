@@ -9,7 +9,7 @@ function HeroCarousel() {
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <iframe
           title="Gumlet clean video"
-          src="https://play.gumlet.io/embed/682064c6a2826ae5397ec00d?autoplay=true&mute=true&controls=false&loop=true&preload=metadata&background=1"
+          src="https://play.gumlet.io/embed/68207918a2826ae5397f2ec4?autoplay=true&mute=true&controls=false&loop=true&preload=metadata&background=1"
           style={{
             border: "none",
             position: "absolute",
