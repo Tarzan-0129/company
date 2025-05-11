@@ -4,6 +4,7 @@ function HeroCarousel() {
   return (
     <div className="relative w-full">
       <Nabbar />
+    <div className="relative w-full mt-4">
       <iframe
         loading="lazy"
         title="Gumlet video player"
@@ -18,7 +19,8 @@ function HeroCarousel() {
         }}
         allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
         allowFullScreen
-        ></iframe>
+      ></iframe>
+    </div>
       <div
         id="carouselExampleInterval"
         className="carousel slide "
