@@ -4,22 +4,21 @@ function HeroCarousel() {
   return (
     <div className="relative w-full">
       <Nabbar />
-
-        <iframe
-          title="Gumlet background video"
-          src="https://play.gumlet.io/embed/682064c6a2826ae5397ec00d?autoplay=true&mute=true&controls=false&loop=true&preload=auto&background=1"
-          style={{
-            border: "none",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            height: "100%",
-            width: "100%",
-          }}
-          loading="lazy"
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-        ></iframe>
+      <iframe
+        title="Gumlet background video"
+        src="https://play.gumlet.io/embed/682064c6a2826ae5397ec00d?autoplay=true&mute=true&controls=false&loop=true&preload=auto&background=1"
+        style={{
+          border: "none",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          height: "100%",
+          width: "100%",
+        }}
+        loading="lazy"
+        allow="autoplay; encrypted-media"
+        allowFullScreen
+      ></iframe>
       <div
         id="carouselExampleInterval"
         className="carousel slide "
