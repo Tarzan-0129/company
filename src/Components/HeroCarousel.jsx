@@ -4,7 +4,8 @@ function HeroCarousel() {
   return (
     <div className="relative w-full">
       <Nabbar />
-      <iframe
+      <div>
+        <iframe
         loading="lazy"
         title="Gumlet video player"
         src="https://play.gumlet.io/embed/682064c6a2826ae5397ec00d"
@@ -18,8 +19,8 @@ function HeroCarousel() {
         }}
         allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
         allowFullScreen
-      ></iframe>
-      <h1>12345678</h1>
+        ></iframe>
+      </div>
       <div
         id="carouselExampleInterval"
         className="carousel slide "
