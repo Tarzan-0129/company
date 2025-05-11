@@ -6,9 +6,8 @@ function HeroCarousel() {
       <Nabbar />
 
         <iframe
-          loading="lazy"
-          title="Gumlet video player"
-          src="https://play.gumlet.io/embed/682064c6a2826ae5397ec00d"
+          title="Gumlet background video"
+          src="https://play.gumlet.io/embed/682064c6a2826ae5397ec00d?autoplay=true&mute=true&controls=false&loop=true&preload=auto&background=1"
           style={{
             border: "none",
             position: "absolute",
@@ -17,7 +16,8 @@ function HeroCarousel() {
             height: "100%",
             width: "100%",
           }}
-          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
+          loading="lazy"
+          allow="autoplay; encrypted-media"
           allowFullScreen
         ></iframe>
       <div
