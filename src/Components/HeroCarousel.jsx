@@ -27,12 +27,9 @@ function HeroCarousel() {
       {/* Optional Overlay Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-white text-center h-full px-4">
         <span className="text-4xl sm:text-5xl font-bold">
-          Building careers. Building organisations.
+          Junp into our world of opportunities
         </span>
-        <span className="text-sm sm:text-xl mt-4 max-w-2xl">
-          Arisezen is India's leading executive search and talent advisory firm,
-          proudly shaping the future of multinationals and Indian businesses for over years
-        </span>
+    
       </div>
     </div>
   );
