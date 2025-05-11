@@ -16,11 +16,11 @@ function HeroCarousel() {
             className="carousel-item active"
             data-bs-interval="4500"
           >
-            {/* <img
+            <img
               src="/HeroCarousel-pics/DeWatermark.ai_1710827225330.jpg"
               className="d-block w-100 w-full"
               alt="..."
-            /> */}
+            />
             <iframe
               title="Gumlet clean video"
               src="https://play.gumlet.io/embed/682064c6a2826ae5397ec00d?autoplay=true&mute=true&controls=false&loop=true&preload=metadata&background=1"
