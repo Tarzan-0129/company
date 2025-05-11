@@ -6,19 +6,19 @@ function HeroCarousel() {
       <Nabbar />
       <div>
         <iframe
-        loading="lazy"
-        title="Gumlet video player"
-        src="https://play.gumlet.io/embed/682064c6a2826ae5397ec00d"
-        style={{
-          border: "none",
-          position: "absolute",
-          top: 0,
-          left: 0,
-          height: "100%",
-          width: "100%",
-        }}
-        allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
-        allowFullScreen
+          title="Gumlet clean video"
+          src="https://play.gumlet.io/embed/682064c6a2826ae5397ec00d?autoplay=true&mute=true&controls=false&loop=true&preload=metadata&background=1"
+          style={{
+            border: "none",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            height: "100%",
+            width: "100%",
+          }}
+          loading="lazy"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
         ></iframe>
       </div>
       <div
