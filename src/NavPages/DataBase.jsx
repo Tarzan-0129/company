@@ -2,13 +2,14 @@ import React, { useEffect } from "react";
 import GetInTouch from "./GetInTouch";
 import Footer from "../Components/Footer";
 import Nabbar from "../Components/Nabbar";
-
+import { useNavigate } from "react-router-dom";
 const DataBase = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  
+
   return (
     <div>
       <Nabbar />
@@ -130,7 +131,7 @@ const DataBase = () => {
 
       <div className="flex items-center  flex-col py-14 px-2 ">
         <span className="text-2xl">WANT TO START DISCUSSION?</span>
-        <div className="my-8 px-12 py-6  font-semibold text-lg bg-amber-500  flex justify-center rounded-3xl sm:w-3/12 border-2 border-amber-500 hover:bg-white duration-200 hover:text-amber-500">
+        <div className="my-8 px-12 py-6  font-semibold text-lg bg-amber-500  flex justify-center rounded-3xl sm:w-3/12 border-2 border-amber-500 hover:bg-white duration-200 hover:text-amber-500" onClick={() => navigate("/contactus")}>
           <button>CONTACT US NOW</button>
         </div>
         <span className="text-lg">Related Case Studies</span>

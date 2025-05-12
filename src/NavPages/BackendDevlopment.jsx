@@ -2,8 +2,11 @@ import React, { useEffect } from "react";
 import GetInTouch from "./GetInTouch";
 import Footer from "../Components/Footer";
 import Nabbar from "../Components/Nabbar";
+import { useNavigate } from "react-router-dom";
+
 
 const BackendDevlopment = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -77,7 +80,7 @@ const BackendDevlopment = () => {
         <div className="border  px-8  py-10 flex flex-col text-center sm:w-1/3 ">
           <div className="flex justify-center pb-1 h-44">
             <img
-            className=" object-contain"
+              className=" object-contain"
               src="public/BackEnd-Pics/Java_programming_language_logo.svg.png"
               alt=""
             />
@@ -152,8 +155,8 @@ const BackendDevlopment = () => {
 
       <div className="flex items-center  flex-col py-14 px-2 ">
         <span className="text-2xl">WANT TO START DISCUSSION?</span>
-        <div className="my-8 px-12 py-6  font-semibold text-lg bg-amber-500  flex justify-center rounded-3xl sm:w-3/12 border-2 border-amber-500 hover:bg-white duration-200 hover:text-amber-500">
-          <button>CONTACT US NOW</button>
+        <div className="my-8 px-12 py-6  font-semibold text-lg bg-amber-500  flex justify-center rounded-3xl sm:w-3/12 border-2 border-amber-500 hover:bg-white duration-200 hover:text-amber-500" onClick={() => navigate("/contactus")}>
+          <button >CONTACT US NOW</button>
         </div>
         <span className="text-lg">Related Case Studies</span>
       </div>

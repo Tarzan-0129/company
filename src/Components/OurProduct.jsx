@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
+import WhyTechsavyPool from "./WhyTechsavyPool";
+import Nabbar from "./Nabbar";
+import Footer from "./Footer";
+
 
 function OurProduct() {
   const [objects, setObjects] = useState([]);
 
   const tab = [
     <div className="pt-14 px-2 flex items-center justify-center flex-row flex-wrap gap-2">
-      <div class="h-28 w-96 rounded-lg border  bg-gradient-to-r from-teal-400 to-indigo-600">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/Business/book.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
@@ -17,9 +21,9 @@ function OurProduct() {
         </div>
       </div>
 
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/Business/bus.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
@@ -29,9 +33,9 @@ function OurProduct() {
         </div>
       </div>
 
-      <div class="h-28 w-96 rounded-lg border  bg-gradient-to-r from-teal-400 to-indigo-600">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/Business/chat.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
@@ -41,20 +45,21 @@ function OurProduct() {
         </div>
       </div>
 
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/Business/erp.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
-            <p className="font-bold"> ERP</p>
-            <p> Business ERP Solution / Product / Shop / Company Management</p>
+            <p className="font-bold">ERP</p>
+            <p>Business ERP Solution / Product / Shop / Company Management</p>
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border  bg-gradient-to-r from-teal-400 to-indigo-600">
+
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/Business/flight.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
@@ -63,20 +68,22 @@ function OurProduct() {
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/Business/garage.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
-            <p className="font-bold"> GMS</p>
-            <p>Garage Management Software </p>
+            <p className="font-bold">GMS</p>
+            <p>Garage Management Software</p>
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border  bg-gradient-to-r from-teal-400 to-indigo-600">
+
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/Business/hr4.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
@@ -85,35 +92,36 @@ function OurProduct() {
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/Business/inventory.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
-            <p className="font-bold"> Wholesale</p>
-            <p> Inventory Control and Inventory Management System</p>
+            <p className="font-bold">Wholesale</p>
+            <p>Inventory Control and Inventory Management System</p>
           </div>
         </div>
       </div>
 
-      <div class="h-28 w-96 rounded-lg border  bg-gradient-to-r from-teal-400 to-indigo-600">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/Business/vms.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
-            <p className="font-bold"> VSG </p>
-            <p> Vehicle Management System</p>
+            <p className="font-bold">VSG</p>
+            <p>Vehicle Management System</p>
           </div>
         </div>
       </div>
     </div>,
 
     <div className="pt-14 px-2 flex items-center justify-center flex-row flex-wrap gap-2">
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/BlockChain/crypto.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
@@ -123,33 +131,33 @@ function OurProduct() {
         </div>
       </div>
 
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/BlockChain/cryptoW.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
             <p className="font-bold">ICO Wallet</p>
-            <p>
-              ICO Script | Complete ICO Software and Token Launching Solution
-            </p>
+            <p>ICO Script | Complete ICO Software and Token Launching Solution</p>
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/BlockChain/exchange.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
-            <p className="font-bold"></p>
+            <p className="font-bold">Tradebox</p>
             <p>Tradebox CryptoCurrency Buy Sell and Trading Software</p>
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/BlockChain/token.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
@@ -161,9 +169,9 @@ function OurProduct() {
     </div>,
 
     <div className="pt-14 px-2 flex items-center justify-center flex-row flex-wrap gap-2">
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/Hospitality/flight.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
@@ -172,9 +180,9 @@ function OurProduct() {
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/Hospitality/manager.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
@@ -183,9 +191,9 @@ function OurProduct() {
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/Hospitality/managerH.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
@@ -197,9 +205,9 @@ function OurProduct() {
     </div>,
 
     <div className="px-2 pt-14 flex items-center justify-center flex-row flex-wrap gap-2">
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/E-Commerce/cashier.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
@@ -208,13 +216,10 @@ function OurProduct() {
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img
-              src="/OurProducts/E-Commerce/shopping-cart.png"
-              alt=""
-            />
+          <div className="h-28 w-24 flex justify-center items-center p-3">
+            <img src="/OurProducts/E-Commerce/shopping-cart.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
             <p className="font-bold">Storefex</p>
@@ -225,9 +230,9 @@ function OurProduct() {
     </div>,
 
     <div className="pt-14 flex px-2 items-center justify-center flex-row flex-wrap gap-2">
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/Healthcare/clinic.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
@@ -236,9 +241,9 @@ function OurProduct() {
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/Healthcare/doctor.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
@@ -247,13 +252,10 @@ function OurProduct() {
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img
-              src="/OurProducts/Healthcare/domain-registration.png"
-              alt=""
-            />
+          <div className="h-28 w-24 flex justify-center items-center p-3">
+            <img src="/OurProducts/Healthcare/domain-registration.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
             <p className="font-bold">Pharma Care</p>
@@ -261,13 +263,10 @@ function OurProduct() {
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img
-              src="/OurProducts/Healthcare/healthcare1.png"
-              alt=""
-            />
+          <div className="h-28 w-24 flex justify-center items-center p-3">
+            <img src="/OurProducts/Healthcare/healthcare1.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
             <p className="font-bold">Multi-Hospital</p>
@@ -275,13 +274,10 @@ function OurProduct() {
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img
-              src="/OurProducts/Healthcare/management-service.png"
-              alt=""
-            />
+          <div className="h-28 w-24 flex justify-center items-center p-3">
+            <img src="/OurProducts/Healthcare/management-service.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
             <p className="font-bold">Clinic365</p>
@@ -289,9 +285,9 @@ function OurProduct() {
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/Healthcare/payment.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
@@ -300,9 +296,9 @@ function OurProduct() {
           </div>
         </div>
       </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
+      <div className="h-28 w-96 rounded-lg border bg-gray-100">
         <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
+          <div className="h-28 w-24 flex justify-center items-center p-3">
             <img src="/OurProducts/Healthcare/pharmacy.png" alt="" />
           </div>
           <div className="flex flex-col justify-center">
@@ -311,7 +307,7 @@ function OurProduct() {
           </div>
         </div>
       </div>
-    </div>,
+    </div>
   ];
 
   useEffect(() => {
@@ -320,56 +316,36 @@ function OurProduct() {
 
   return (
     <>
+      <Nabbar />
+      <div className=" h-80  flex relative  ">
+        <img src="/OurProducts/product.png" className=" w-full object-cover" />
+      </div>
       <div className="my-10">
         <div className="flex text-center flex-col px-4 py-8">
-          <p className=" pb-4 text-4xl font-extrabold  ">Our Product</p>
-          <p className="text-xl font-light">
-            We provide a time-worthy business solution to every type of
-            business. Find out your one and level up your success stairs.
-          </p>
+
         </div>
 
-        <div className="flex justify-center items-center flex-wrap text-white font-semibold gap-4 ">
-          <button
-            class="bg-indigo-900 hover:bg-indigo-600 px-8 py-1.5 rounded-xl"
-            onClick={() => setObjects(tab[0])}
-          >
-            Business
-          </button>
-
-          <button
-            class="bg-indigo-900 hover:bg-indigo-600 px-8 py-1.5 rounded-xl"
-            onClick={() => setObjects(tab[1])}
-          >
-            Block Chain
-          </button>
-
-          <button
-            class="bg-indigo-900 hover:bg-indigo-600 px-8 py-1.5 rounded-xl"
-            onClick={() => setObjects(tab[2])}
-          >
-            Hospitality
-          </button>
-
-          <button
-            class="bg-indigo-900 hover:bg-indigo-600 px-8 py-1.5 rounded-xl"
-            onClick={() => setObjects(tab[3])}
-          >
-            E-Commerce
-          </button>
-
-          <button
-            class="bg-indigo-900 hover:bg-indigo-600 px-8 py-1.5 rounded-xl "
-            onClick={() => setObjects(tab[4])}
-          >
-            Healthcare
-          </button>
+        <div className="flex justify-center items-center flex-wrap font-semibold gap-4 text-black">
+          {["Business", "Block Chain", "Hospitality", "E-Commerce", "Healthcare"].map((label, index) => (
+            <button
+              key={label}
+              className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800"
+              onClick={() => setObjects(tab[index])}
+            >
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-transparent">
+                {label}
+              </span>
+            </button>
+          ))}
         </div>
+
 
         <div> {objects}</div>
 
         <div></div>
       </div>
+      <WhyTechsavyPool />
+      <Footer />
     </>
   );
 }

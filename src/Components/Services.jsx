@@ -28,10 +28,9 @@ function Services() {
   return (
     <div className="my-7 ">
       <div className="flex flex-col items-center">
-        <p className="font-extrabold pb-3  text-4xl">Services</p>
+        <p className="font-extrabold pb-3  text-4xl">With Us</p>
         <p className="text-center text-xl font-light px-2 ">
-          At Arisezen, we accelerate business outcomes by Rapid Digital
-          Transformation services.
+          Let’s start your adventure with us!
         </p>
 
       </div>

@@ -70,7 +70,7 @@ const ContactUs = () => {
 
               <div>
                 <a
-                  href="https://www.instagram.com/arisezen2024/"
+                  href="https://www.instagram.com/TechsavyPool2024/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -80,7 +80,7 @@ const ContactUs = () => {
               <FaYoutube size={40} />
               <div>
                 <a
-                  href="https://www.linkedin.com/showcase/arisezen/"
+                  href="https://www.linkedin.com/showcase/TechsavyPool/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

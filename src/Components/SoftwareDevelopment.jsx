@@ -372,7 +372,7 @@ const SoftwareDevelopment = () => {
         </div>
 
         <div className="bg-green-500 flex flex-col items-center gap-6 px-4 text-center justify-center py-8 text-4xl font-semibold text-white">
-          <p>Start Your Product Journey With Arisezen</p>
+          <p>Start Your Product Journey With TechsavyPool</p>
 
           <div className="bg-orange-500 hover:bg-orange-600 duration-300  py-2 px-6 rounded-md text-xl ">
             <button>Consult Experts</button>

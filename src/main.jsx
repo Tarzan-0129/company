@@ -11,10 +11,13 @@ import FrontEndDev from "./NavPages/FrontEndDev.jsx";
 import DataBase from "./NavPages/DataBase.jsx";
 import MobileAppDev from "./NavPages/MobileAppDev.jsx";
 import SoftwareDevelopment from "./Components/SoftwareDevelopment.jsx";
+import Consultancy from "./Components/Consultancy.jsx";
 import InternshipAndTraining from "./NavPages/InternshipAndTraining.jsx";
 import Privacy from "./Components/Privacy.jsx";
 import BackendDevlopment from "./NavPages/BackendDevlopment.jsx";
 import Qa from "./NavPages/Qa.jsx";
+
+import OurProduct from "./Components/OurProduct.jsx"; 
 
 const router = createBrowserRouter([
   {
@@ -54,6 +57,10 @@ const router = createBrowserRouter([
         path: "/softwaredevelopment",
         element: <SoftwareDevelopment />,
       },
+      {
+        path: "/consultancy",
+        element: <Consultancy />,
+      },
 
       {
         path: "/backendDevlopment",
@@ -64,7 +71,7 @@ const router = createBrowserRouter([
         path: "/qa",
         element: <Qa />,
       },
-      
+
       {
         path: "/privacy",
         element: <Privacy />,
@@ -73,14 +80,17 @@ const router = createBrowserRouter([
         path: "/InternshipAndTraining",
         element: <InternshipAndTraining />,
       },
+      
+      {
+        path: "/OurProduct", // Corrected path
+        element: <OurProduct />,
+      }
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}>
-      <App />
-    </RouterProvider>
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );

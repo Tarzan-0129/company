@@ -27,7 +27,7 @@ const InternshipAndTraining = () => {
 
       <div className="flex text-xl text-gray-500 pt-10 gap-8 flex-col sm:pt-20 sm:px-28 text-start sm:text-center px-3 sm:">
         <span>
-          The Arisezen  Foundation has the mission of providing job skills training
+          The TechsavyPool  Foundation has the mission of providing job skills training
           and placement for underprivileged youth into entry-level white-collar
           jobs in India. These types of jobs tend to give these youth higher
           income levels than the regular blue-collar work they are offered,
@@ -36,20 +36,20 @@ const InternshipAndTraining = () => {
         </span>
 
         <span>
-          The Arisezen  Foundation incorporates an Al-driven EdTech platform to
+          The TechsavyPool  Foundation incorporates an Al-driven EdTech platform to
           develop English Communications, Selling Skills, Problem Solving,
           Collaboration, Professionalism & Industry Knowledge in students within
           a 45-day period.
         </span>
 
         <span>
-          Over the last two years, Arisezen  Foundation has trained 15000+ low-income
+          Over the last two years, TechsavyPool  Foundation has trained 15000+ low-income
           youth to get jobs in the BFSI Sector at average salaries between Rs.
           2.40 Lakh to Rs. 3.00 Lakh per annum.
         </span>
 
         <span>
-        Arisezen  Foundation provides Diploma courses in areas like BFSI, ITES,
+        TechsavyPool  Foundation provides Diploma courses in areas like BFSI, ITES,
           Digital Marketing etc and uses a blended learning platform which
           incorporates behavioural science & data analytics to develop the
           following employability traits which are in high demand by companies:
@@ -61,7 +61,7 @@ const InternshipAndTraining = () => {
 
       <div className="bg-[#3D1C38] flex text-xl px-3 text-gray-300 gap-8 flex-col py-16 sm:px-28 text-start sm:text-center ">
         <span>
-        Arisezen's employability model is capital efficient, as its technology
+        TechsavyPool's employability model is capital efficient, as its technology
           infrastructure and admin costs are subsidised by its sister company
           Smart Institute Pvt. Ltd. More than 90% of funds raised are used for
           implementing its skilling projects. Around 15000+ students in Mumbai

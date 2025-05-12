@@ -2,34 +2,25 @@ import Nabbar from "./Nabbar";
 
 function HeroCarousel() {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="w-full h-screen overflow-hidden">
+
       <Nabbar />
 
       {/* Background Video */}
-      <div className="absolute top-0 left-0 w-full h-full z-0">
-        <iframe
-          title="Gumlet clean video"
-          src="https://play.gumlet.io/embed/68207918a2826ae5397f2ec4?autoplay=true&mute=true&controls=false&loop=true&preload=metadata&background=1"
-          style={{
-            border: "none",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "50%",
-          }}
-          loading="lazy"
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-        ></iframe>
-      </div>
+      <video
+        src="/header.mp4" // <-- use public path or import
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+      />
 
-      {/* Optional Overlay Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-white text-center h-full px-4">
-        <span className="text-4xl sm:text-5xl font-bold">
-          Junp into our world of opportunities
-        </span>
-    
+      {/* Overlay content */}
+      <div className="relative z-10 flex items-center justify-center h-full">
+        <h1 className="text-white text-4xl sm:text-5xl font-bold text-center px-4">
+          Jump into our world of opportunities
+        </h1>
       </div>
     </div>
   );

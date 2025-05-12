@@ -29,9 +29,9 @@ function Footer() {
 
               <p>
                 Phone : +91-6260900769, +91-9024833455
-                <br /> Email : Info@Arisezen.in
+                <br /> Email : Info@TechsavyPool.in
                 <br />
-                Google Email : ArisezenTech@gmail.com
+                Google Email : TechsavyPoolTech@gmail.com
               </p>
 
 
@@ -155,7 +155,7 @@ function Footer() {
 
               <div>
                 <a
-                  href="https://www.instagram.com/arisezen2024/"
+                  href="https://www.instagram.com/TechsavyPool2024/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -167,7 +167,7 @@ function Footer() {
 
               <div>
                 <a
-                  href="http://youtube.com/@ArisezenTech"
+                  href="http://youtube.com/@TechsavyPoolTech"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -197,7 +197,7 @@ function Footer() {
 
               <div>
                 <a
-                  href="https://www.pinterest.com/arisezen"
+                  href="https://www.pinterest.com/TechsavyPool"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -212,7 +212,7 @@ function Footer() {
 
               <div>
                 <a
-                  href="http://x.com/ArisezenTech"
+                  href="http://x.com/TechsavyPoolTech"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -225,7 +225,7 @@ function Footer() {
 
               <div>
                 <a
-                  href="https://www.linkedin.com/showcase/arisezen/"
+                  href="https://www.linkedin.com/showcase/TechsavyPool/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -242,7 +242,7 @@ function Footer() {
 
         <div className="flex justify-center  text-center">
           <p className="text-gray-400 font font-thin">
-          © Copyright  Arisezen Tech ( A Nawal Sustainability Group Product. ) All Rights Reserved
+          © Copyright  TechsavyPool Tech ( A Nawal Sustainability Group Product. ) All Rights Reserved
           </p>
         </div>
       </div>

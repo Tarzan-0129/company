@@ -2,13 +2,14 @@ import React, { useEffect } from "react";
 import GetInTouch from "./GetInTouch";
 import Footer from "../Components/Footer";
 import Nabbar from "../Components/Nabbar";
-
+import { useNavigate } from "react-router-dom";
 const MobileAppDev = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  
+
   return (
     <div>
       <Nabbar />
@@ -62,7 +63,7 @@ const MobileAppDev = () => {
           </div>
 
           <span className="py-4">
-          Create rich and high-performing UI with ISHIR’s NativeScript App Development Services When it comes to mobile development, we always prefer
+            Create rich and high-performing UI with ISHIR’s NativeScript App Development Services When it comes to mobile development, we always prefer
           </span>
           <div className="flex justify-center">
             <button className="rounded-3xl hover:bg-yellow-400 duration-500 border-gray-800 hover:text-white du border flex justify-center items-center py-2.5 w-3/5 ">
@@ -77,7 +78,7 @@ const MobileAppDev = () => {
           </div>
 
           <span className="py-4">
-          Develop innovative hybrid mobile app development with ISHIR’s Ionic Development Services Ionic is one of the most successful cross-platform mobile          </span>
+            Develop innovative hybrid mobile app development with ISHIR’s Ionic Development Services Ionic is one of the most successful cross-platform mobile          </span>
           <div className="flex justify-center">
             <button className="rounded-3xl hover:bg-yellow-400 duration-500 border-gray-800 hover:text-white du border flex justify-center items-center py-2.5 w-3/5 ">
               EXPLORE MORE
@@ -94,7 +95,7 @@ const MobileAppDev = () => {
           </div>
 
           <span className="py-4">
-          ISHIR’s Flutter Application Development Services assure amazing and flawless native apps for your business requirements Flutter is a cross-platform app          </span>
+            ISHIR’s Flutter Application Development Services assure amazing and flawless native apps for your business requirements Flutter is a cross-platform app          </span>
           <div className="flex justify-center">
             <button className="rounded-3xl hover:bg-yellow-400 duration-500 border-gray-800 hover:text-white du border flex justify-center items-center py-2.5 w-3/5 ">
               EXPLORE MORE
@@ -107,7 +108,7 @@ const MobileAppDev = () => {
             <img src="/Mobile-App-Dev-Pics/dowhthnload.webp" alt="" />
           </div>
           <span className="py-4">
-          Engage with the ISHIR for faster and cutting-edge Progressive Web App (PWA) Development Services The Progressive Web App (PWA) Framework       </span>
+            Engage with the ISHIR for faster and cutting-edge Progressive Web App (PWA) Development Services The Progressive Web App (PWA) Framework       </span>
           <div className="flex justify-center">
             <button className="rounded-3xl hover:bg-yellow-400 duration-500 border-gray-800 hover:text-white du border flex justify-center items-center py-2.5 w-3/5 ">
               EXPLORE MORE
@@ -120,7 +121,7 @@ const MobileAppDev = () => {
             <img src="/Mobile-App-Dev-Pics/dorrwnload.webp" alt="" />
           </div>
           <span className="py-4">
-          Get high-quality and feature enriched mobile apps with React Native Development capabilities React Native is the next big word in
+            Get high-quality and feature enriched mobile apps with React Native Development capabilities React Native is the next big word in
           </span>
           <div className="flex justify-center">
             <button className="rounded-3xl hover:bg-yellow-400 duration-500 border-gray-800 hover:text-white du border flex justify-center items-center py-2.5 w-3/5 ">
@@ -132,7 +133,7 @@ const MobileAppDev = () => {
 
       <div className="flex items-center  flex-col py-14 px-2 ">
         <span className="text-2xl">WANT TO START DISCUSSION?</span>
-        <div className="my-8 px-12 py-6  font-semibold text-lg bg-amber-500  flex justify-center rounded-3xl sm:w-3/12 border-2 border-amber-500 hover:bg-white duration-200 hover:text-amber-500">
+        <div className="my-8 px-12 py-6  font-semibold text-lg bg-amber-500  flex justify-center rounded-3xl sm:w-3/12 border-2 border-amber-500 hover:bg-white duration-200 hover:text-amber-500" onClick={() => navigate("/contactus")}>
           <button>CONTACT US NOW</button>
         </div>
         <span className="text-lg">Related Case Studies</span>

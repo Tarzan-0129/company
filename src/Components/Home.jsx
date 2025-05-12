@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
 import HeroCarousel from "./HeroCarousel";
 import Services from "./Services";
-import OurProduct from "./OurProduct";
-import WhyArisezen from "./WhyArisezen";
 import Contact from "./Contact";
-import BusinessCentric from "./BusinessCentric";
+import BusinessCentric from "./Consultancy";
 import Footer from "./Footer";
 import Blog from "./Blog";
 import ContactUs from "./ContactUs";
@@ -24,14 +22,7 @@ const Home = () => {
     <>
       <HeroCarousel />
       <Services />
-      <OurProduct />
       <Contact />
-      <WhyArisezen />
-      <BusinessCentric />
-
-      
-
-
       <Faq />
       <Footer />
     </>
