@@ -16,10 +16,7 @@ const Privacy = () => {
       <Nabbar />
 
       <div className="h-44 flex relative">
-        <img
-          src="/Blog-jpg/Our-Blog (2).jpg"
-          className=" w-full object-cover"
-        />
+        <img src="/blog/Our-Blog (2).jpg" className=" w-full object-cover"/>
         <div className="absolute text-white text-2xl sm:text-5xl font-semibold flex flex-col h-full justify-center text-center items-center w-full">
           <p>Privacy / Policy</p>
         </div>

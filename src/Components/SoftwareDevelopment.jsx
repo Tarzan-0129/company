@@ -4,68 +4,61 @@ import Footer from "./Footer";
 import Nabbar from "./Nabbar";
 
 const SoftwareDevelopment = () => {
-  
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  
+
   return (
     <div>
-      <div>
-        <Nabbar />
-      </div>
-
-      <div className=" h-80  flex relative ">
-        <img
-          src="/SoftwareDevelopment-PICS/SD-Pics-1.webp"
-          className=" w-full object-cover"
-        />
+      <Nabbar />
+      <div className="h-80  flex relative ">
+        <img src="/assets/img/softwaredevelopment/SD-Pics-1.webp" className=" w-full object-cover" />
         <div className="absolute text-white text-2xl sm:text-5xl font-semibold flex flex-col h-full justify-center text-center items-center w-full">
           <p>Software Product Development</p>
         </div>
       </div>
+      <div className="flex flex-col items-center py-10 px-5 w-md:max-w-xl">
+        <div className="py-20 px-2 text-center font-semibold text-5xl flex justify-center text-yellow-600">
+          <p>Who We Are Right Fit For ?</p>
+        </div>
+        <div className="flex flex-col sm:flex-row sm:px-6 px-3 gap-4 pb-4 ">
+          <div className=" flex flex-col gap-2 w-full ">
+            <p className="font-semibold text-xl">Startups </p>
+            <p className="text-sm text-gray-500">
+              We are a launchpad for startups without tech expertise. We offer a
+              dedicated team with the right skill sets and experience to develop a
+              prototype or a minimum viable product.
+            </p>
+          </div>
 
-      <div className="py-20 px-2 text-center font-semibold text-5xl flex justify-center text-yellow-600">
-        <p>Who We Are Right Fit For ?</p>
+          <div className=" flex flex-col gap-2 w-full ">
+            <p className="font-semibold text-xl ">
+              Mid and Large sized Enterprises launching their own software
+              products{" "}
+            </p>
+            <p className="text-sm text-gray-500">
+              Using our cutting-edge technologies, agile delivery approach, and
+              expertise, we provide fully functional software product development
+              services for enterprises of all sizes to refine their idea into a
+              scalable and market-worthy product.
+            </p>
+          </div>
+
+          <div className=" flex flex-col gap-2 w-full ">
+            <p className="font-semibold text-xl">
+              Organizations that want to digitalize.
+            </p>
+            <p className="text-sm text-gray-500">
+              We are a launchpad for startups without tech expertise. We offer a
+              dedicated team with the right skill sets and experience to develop a
+              prototype or a minimum viable product.
+            </p>
+          </div>
+        </div>
       </div>
-
-      <div className="flex flex-col sm:flex-row sm:px-6 px-3 gap-4 pb-4 ">
-        <div className=" flex flex-col gap-2 w-full ">
-          <p className="font-semibold text-xl">Startups </p>
-          <p className="text-sm text-gray-500">
-            We are a launchpad for startups without tech expertise. We offer a
-            dedicated team with the right skill sets and experience to develop a
-            prototype or a minimum viable product.
-          </p>
-        </div>
-
-        <div className=" flex flex-col gap-2 w-full ">
-          <p className="font-semibold text-xl ">
-            Mid and Large sized Enterprises launching their own software
-            products{" "}
-          </p>
-          <p className="text-sm text-gray-500">
-            Using our cutting-edge technologies, agile delivery approach, and
-            expertise, we provide fully functional software product development
-            services for enterprises of all sizes to refine their idea into a
-            scalable and market-worthy product.
-          </p>
-        </div>
-
-        <div className=" flex flex-col gap-2 w-full ">
-          <p className="font-semibold text-xl">
-            Organizations that want to digitalize.
-          </p>
-          <p className="text-sm text-gray-500">
-            We are a launchpad for startups without tech expertise. We offer a
-            dedicated team with the right skill sets and experience to develop a
-            prototype or a minimum viable product.
-          </p>
-        </div>
-      </div>
-
-      <div className=" bg-gray-100 ">
+      <div className="bg-gray-100 flex flex-col items-center py-10 px-5 w-md:max-w-xl">
         <div className="py-20 px-2 flex justify-center text-3xl font-semibold text-center">
           <p>
             Software Development Process We Use To Build The Next-Gen Digital
@@ -76,7 +69,7 @@ const SoftwareDevelopment = () => {
         <div className="flex flex-col px-4 pb-12 gap-20 w-full">
           <div className=" flex flex-col sm:flex-row justify-between">
             <div className="flex justify-center">
-              <img src="/SoftwareDevelopment-PICS/Pic-1.JPG" alt="" />
+              <img src="/assets/img/softwaredevelopment/Pic-1.JPG" />
             </div>
 
             <div className="sm:w-2/4">
@@ -138,11 +131,7 @@ const SoftwareDevelopment = () => {
 
           <div className=" flex flex-col sm:flex-row justify-between  ">
             <div className="flex justify-center ">
-              <img
-                className="object-contain"
-                src="/SoftwareDevelopment-PICS/Pic-2.JPG"
-                alt=""
-              />
+              <img className="object-contain" src="/assets/img/softwaredevelopment/Pic-2.JPG" />
             </div>
 
             <div className=" sm:w-2/4">
@@ -207,11 +196,7 @@ const SoftwareDevelopment = () => {
 
           <div className=" flex flex-col sm:flex-row justify-between  ">
             <div className="flex justify-center">
-              <img
-                className="object-contain"
-                src="/SoftwareDevelopment-PICS/Pic-3.JPG"
-                alt=""
-              />
+              <img className="object-contain" src="/assets/img/softwaredevelopment/Pic-3.JPG" />
             </div>
 
             <div className=" sm:w-2/4">
@@ -262,11 +247,7 @@ const SoftwareDevelopment = () => {
 
           <div className=" flex flex-col sm:flex-row justify-between  ">
             <div className="flex justify-center">
-              <img
-                className="object-contain"
-                src="/SoftwareDevelopment-PICS/Pic-4.JPG"
-                alt=""
-              />
+              <img className="object-contain" src="/assets/img/softwaredevelopment/Pic-4.JPG" />
             </div>
 
             <div className=" sm:w-2/4">
@@ -317,11 +298,7 @@ const SoftwareDevelopment = () => {
 
           <div className=" flex flex-col sm:flex-row justify-between  ">
             <div className="flex justify-center">
-              <img
-                className="object-contain"
-                src="/SoftwareDevelopment-PICS/Pics-5.JPG"
-                alt=""
-              />
+              <img className="object-contain" src="/assets/img/softwaredevelopment/Pics-5.JPG" />
             </div>
 
             <div className=" sm:w-2/4">
@@ -372,7 +349,7 @@ const SoftwareDevelopment = () => {
         </div>
 
         <div className="bg-green-500 flex flex-col items-center gap-6 px-4 text-center justify-center py-8 text-4xl font-semibold text-white">
-          <p>Start Your Product Journey With Arisezen</p>
+          <p>Start Your Product Journey With TechsavyPool</p>
 
           <div className="bg-orange-500 hover:bg-orange-600 duration-300  py-2 px-6 rounded-md text-xl ">
             <button>Consult Experts</button>
@@ -430,7 +407,6 @@ const SoftwareDevelopment = () => {
           </div>
         </div>
       </div>
-
       <Footer />
     </div>
   );

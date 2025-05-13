@@ -1,16 +1,11 @@
-import { FaFacebookSquare, FaPhoneAlt } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { IoLogoLinkedin } from "react-icons/io5";
+import { useEffect } from "react";
+import { FaPhoneAlt } from "react-icons/fa";
 import { MdCall } from "react-icons/md";
 import { HiOutlineMailOpen } from "react-icons/hi";
-
-import React, { useEffect } from "react";
 import { IoLocationSharp } from "react-icons/io5";
-
 import { IoMdPerson } from "react-icons/io";
-import Nabbar from "./Nabbar";
 
+import Nabbar from "./Nabbar";
 import Footer from "./Footer";
 
 const ContactUs = () => {
@@ -25,10 +20,7 @@ const ContactUs = () => {
       </div>
 
       <div className=" h-80 flex relative">
-        <img
-          src="/About-pics/About-Main.webp"
-          className=" w-full object-cover"
-        />
+        <img src="/assets/img/about/About-Main.webp" className=" w-full object-cover" />
         <div className="absolute text-white text-2xl sm:text-5xl font-semibold flex flex-col h-full justify-center text-center items-center w-full">
           <p>Contact us</p>
         </div>
@@ -51,42 +43,18 @@ const ContactUs = () => {
             <div className="flex gap-3 items-center justify-start">
               <IoLocationSharp size={40} className="text-purple-700" />
               <p>
-                Forum, DLF Cyber City Rd, DLF Phase 3, Gurugram, Haryana 122002.
+                113 Mcinnis Ct, Gaston, SC, United States 29053
               </p>
             </div>
 
             <div className="flex gap-3 items-center justify-start">
               <MdCall size={27} className="text-yellow-500" />
-              <p>9024833455</p>
+              <p>4798020192</p>
             </div>
 
             <div className="flex gap-3 items-center justify-start">
               <HiOutlineMailOpen size={28} className="text-orange-500" />
-              <p>thenawalorghrd@gmail.com</p>
-            </div>
-
-            <div className="flex gap-3 py-6 text-orange-600 ">
-              <FaFacebookSquare size={40} />
-
-              <div>
-                <a
-                  href="https://www.instagram.com/arisezen2024/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaInstagram size={40} />
-                </a>
-              </div>
-              <FaYoutube size={40} />
-              <div>
-                <a
-                  href="https://www.linkedin.com/showcase/arisezen/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <IoLogoLinkedin size={40} />
-                </a>
-              </div>
+              <p>admin@techsavypool.com</p>
             </div>
           </div>
 
@@ -95,7 +63,7 @@ const ContactUs = () => {
               <p className="font-bold text-xl">Primary Information</p>
             </div>
 
-            <div className="flex flex-wrap  justify-center gap-5 py-3 ">
+            <div className="flex flex-wrap gap-5 py-3 ">
               <div className="py-4 border rounded-xl  outline-none flex justify-start items-center w-80 ">
                 <IoMdPerson className=" w-1/6 text-gray-400" />
                 <input

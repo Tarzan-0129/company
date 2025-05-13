@@ -1,22 +1,17 @@
-import React, { useState } from "react";
-
 import FaqAccordion from "./FaqAccordion";
 
 const Faq = () => {
   return (
     <div>
       <div className=" h-44  bg-red-400 flex relative ">
-        <img src="/parallax-5.jpg" className=" w-full object-cover" />
+        <img src="/assets/img/parallax-5.jpg" className=" w-full object-cover" />
         <div className="absolute text-white text-2xl font-semibold flex flex-col h-full justify-center text-center items-center w-full">
-          <p>India's Leading Consultancy In Delhi</p>
+          <p>The world wide Leading Consultancy</p>
           <p>FAQ</p>
         </div>
       </div>
-
-      
-
       <div className="gap-4 flex sm:flex-row flex-col  sm:px-10">
-        <div className=" py-4  sm:w-1/2">
+        <div className="py-4  sm:w-1/2">
           <FaqAccordion
             title={"DIFFERENCE BETWEEN CONSULTANCY AND STAFFING?"}
             anss={
@@ -27,7 +22,7 @@ const Faq = () => {
           <FaqAccordion
             title={"HOW DO I FIND WHETHER CONSULTANCY IS FAKE OR NOT?"}
             anss={
-              "Its very true there are lot of fake consultancies these days. Be very careful before approaching any consultancy in terms of money mainly. First check the consultancy online through facebook , website or google. Later on just take a note of address of any consultancy and visit that consultancy or if you living far ask your friends to visit that address of consultancy. WSNE Consulting gives you a better opportunity to make your career with us, we are connected with PAN India reputed companies and International MNC. We provide best services to our clients and candidates."
+              "Its very true there are lot of fake consultancies these days. Be very careful before approaching any consultancy in terms of money mainly. First check the consultancy online through facebook , website or google. Later on just take a note of address of any consultancy and visit that consultancy or if you living far ask your friends to visit that address of consultancy. WSNE Consulting gives you a better opportunity to make your career with us, we are connected with PAN  United States reputed companies and International MNC. We provide best services to our clients and candidates."
             }
           />
 
@@ -41,41 +36,25 @@ const Faq = () => {
           />
         </div>
 
-        <div className=" sm:w-1/2 flex flex-col items-start  justify-center gap-8 px-2 py-8">
-          <p className="font-bold flex w-full justify-center  text-xl">
-            Ask us question
-          </p>
-
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="outline-none p-3 rounded-sm w-full border-b border-gray-300"
-          />
-          <div className="flex flex-row  w-full justify-center gap-6">
-            <input
-              type="text"
-              placeholder="Email Adderss"
-              className="outline-none p-3 rounded-sm w-1/2 border-b border-gray-300"
-            />
-            <input
-              type="text"
-              placeholder="Phone Number"
-              className="outline-none p-3 rounded-sm w-1/2 border-b border-gray-300 "
-            />
-          </div>
-          <textarea
-            name=""
-            id=""
-            placeholder="Your Message"
-            cols="30"
-            className="outline-none w-full h-36 border-b border-gray-300 p-3"
-            rows="10"
-          ></textarea>
-          <div className=" flex w-full justify-end">
-            <button className="bg-indigo-500 py-3 px-12 rounded-lg hover:bg-purple-500 duration-300 text-white text-2xl font-semibold">
-              Send Message
-            </button>
-          </div>
+        <div className="py-4  sm:w-1/2">
+        <FaqAccordion
+          title={"WHAT ARE THE BENEFITS OF USING A CONSULTANCY SERVICE?"}
+          anss={
+            "Consultancy services provide expert advice and solutions tailored to your business needs. They help in identifying problems, improving efficiency, and implementing strategies to achieve goals. Additionally, they bring industry expertise, save time, and often reduce costs by avoiding common pitfalls."
+          }
+        />
+        <FaqAccordion
+          title={"WHAT IS THE ROLE OF A CONSULTANT IN A COMPANY?"}
+          anss={
+            "A consultant's role is to analyze the company's challenges, provide expert advice, and implement solutions to improve performance. They work closely with stakeholders to understand objectives and deliver actionable insights to achieve desired outcomes."
+          }
+        />
+        <FaqAccordion
+          title={"HOW DO CONSULTANCY SERVICES CHARGE FOR THEIR WORK?"}
+          anss={
+            "Consultancy services typically charge based on hourly rates, project-based fees, or retainers. The pricing structure depends on the scope of work, expertise required, and duration of the engagement."
+          }
+        />
         </div>
       </div>
     </div>

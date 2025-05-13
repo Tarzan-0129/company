@@ -1,256 +1,174 @@
-import React, { useState } from "react";
-
-import { CiFacebook } from "react-icons/ci";
-import { RiInstagramLine } from "react-icons/ri";
-import { CiTwitter } from "react-icons/ci";
+import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
-import { Link } from "react-router-dom";
 
 const Nabbar = () => {
-  const [navbar, setNavbar] = useState(false);
-  const [isService, setIsService] = useState(false);
-  const [isTECHNOLOGIES, setIsTECHNOLOGIES] = useState(false);
-  const [isPRODUCTS, setIsPRODUCTS] = useState(false);
-  // console.log(isHamTrue.service);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [hoveredDropdown, setHoveredDropdown] = useState(null);
+  const [isAtTop, setIsAtTop] = useState(true);
+  const closeTimeout = useRef(null);
 
-  const changeBackground = () => {
-    if (window.scrollY >= 2) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsAtTop(window.scrollY < 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleMouseEnter = (key) => {
+    clearTimeout(closeTimeout.current);
+    setHoveredDropdown(key);
   };
 
-  window.addEventListener("scroll", changeBackground);
+  const handleMouseLeave = () => {
+    closeTimeout.current = setTimeout(() => {
+      setHoveredDropdown(null);
+    }, 100);
+  };
 
-  const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const navItems = [
+    { name: "HOME", path: "/" },
+    {
+      name: "SERVICES",
+      key: "services",
+      submenu: [
+        { label: "Software Development", path: "/softwaredevelopment" },
+        { label: "Consultancy", path: "/consultancy" },
+      ],
+    },
+    {
+      name: "TECHNOLOGIES",
+      key: "tech",
+      submenu: [
+        { label: "Internship & Training", path: "/InternshipAndTraining" },
+        { label: "Front End Development", path: "/frontenddev" },
+        { label: "Backend Development", path: "/backendDevlopment" },
+        { label: "Database Management", path: "/database" },
+        { label: "Mobile App Development", path: "/mobileappdev" },
+        { label: "QA", path: "/qa" },
+      ],
+    },
+    {
+      name: "PRODUCTS", path: "/OurProduct"
+    },
+    { name: "ABOUT", path: "/about" },
+    { name: "BLOG", path: "/blog" },
+    { name: "CONTACT US", path: "/contactus" },
+  ];
 
-  function HandleHamTrue() {
-    setIsService((perv) => !perv);
-  }
-
-  function HandleisTECHNOLOGIES() {
-    setIsTECHNOLOGIES((perv) => !perv);
-  }
-
-  function HandleisPRODUCTS() {
-    setIsPRODUCTS((perv) => !perv);
-  }
+  const closeMobileMenu = () => {
+    setMenuOpen(false);
+    setHoveredDropdown(null);
+  };
 
   return (
-    <div>
-      {isOpenMenu && (
-        <div className="sm:hidden fixed z-20 inset-0 bg-slate-800">
-          <div className="relative text-end mr-4 mt-4 ">
-            <button className="" onClick={() => setIsOpenMenu(false)}>
-              <ImCross color="white" size={40} />
-            </button>
+    <header className={`fixed top-0 w-full z-50 transition duration-300 ${isAtTop ? "bg-transparent" : "bg-sky-600 shadow-2xl"}`}>
+      <div className="flex items-center justify-between px-4 sm:px-12 py-3">
+        <Link to="/">
+          <div className="flex items-center gap-2">
+            <img src="/assets/img/Main-Logo.png" alt="Logo" className="h-12 sm:h-16" />
+            <h3 className="text-white text-xl sm:text-3xl font-bold">
+              Techsavypool
+            </h3>
           </div>
+        </Link>
 
-          <div className="flex flex-col pt-8 text-white text-2xl font-semibold  text-center gap-4 ">
-            <Link to={"/"}>HOME</Link>
-
-            <div className="">
-              <span onClick={HandleHamTrue} className="px-2 ">
-                SERVICES
-              </span>
-
-              <div
-                className={`transition-all duration-500 bg-white text-xs px-2 text-black gap-2.5 flex flex-col w-full overflow-hidden   ${
-                  isService ? "max-h-60 py-3 " : "max-h-0 py-0"
-                }`}
-              >
-                <span className="">
-                  <Link to={"/softwaredevelopment"}>SoftwareDevelopment</Link>
-                </span>
-                <span className="">Consultansy</span>
-                <span className="">Testing</span>
-                <span className="">Emerging</span>
-                <span className="">Cloud</span>
-                <span className="">Data Analytics</span>
-                <span className="">Staff Augmentation</span>
-                <span className="">Projct Management Services</span>
-              </div>
-            </div>
-
-            <p>
-              <Link to={"/about"}> ABOUT </Link>
-            </p>
-
-            <div className="">
-              <span onClick={HandleisTECHNOLOGIES}>TECHNOLOGIES</span>
-              <div
-                className={`transition-all duration-500 bg-white text-xs px-2 text-black gap-2.5 flex flex-col w-full overflow-hidden   ${
-                  isTECHNOLOGIES ? "max-h-96 py-3" : "max-h-0 py-0"
-                }`}
-              >
-                <span className="hover:cursor-pointer">
-                  <Link to={"/InternshipAndTraining"}>
-                    {" "}
-                    Internship & Training{" "}
-                  </Link>
-                </span>
-                <span className="hover:cursor-pointer">
-                  <Link to={"/frontenddev"}> Front End Development </Link>
-                </span>
-                <span className="hover:cursor-pointer">Backend Devlopment</span>
-                <span className="hover:cursor-pointer">
-                  Fullstack Development
-                </span>
-                <span className="hover:cursor-pointer">
-                  <Link to={"/database"}> Database Management Services </Link>
-                </span>
-                <span className="hover:cursor-pointer">
-                  <Link to={"/mobileappdev"}> Mobile App Development </Link>
-                </span>
-                <span className="hover:cursor-pointer">Cloud and Infra</span>
-                <span className="hover:cursor-pointer">
-                  Data Analytics and Reporting
-                </span>
-                <span className="hover:cursor-pointer">Ecommerce</span>
-                <span className="hover:cursor-pointer">QA</span>
-              </div>
-            </div>
-
-            <div>
-              <span onClick={HandleisPRODUCTS}>PRODUCTS</span>
-              <div
-                className={`transition-all duration-500 bg-white text-xs px-2 text-black gap-2.5 flex flex-col w-full overflow-hidden  ${
-                  isPRODUCTS ? "max-h-60 py-3 " : "max-h-0 py-0"
-                }`}
-              >
-                <span className="">Clients</span>
-                <span className="">Success Stories</span>
-                <span className="">Testimonials</span>
-                <span className="">More Case Studies</span>
-              </div>
-            </div>
-            <p>
-              <Link to={"/blog"}> BLOG </Link>
-            </p>
-            <p>
-              <Link to={"/contactus"}> CONTACT US </Link>
-            </p>
-          </div>
-        </div>
-      )}
-
-      <div
-        className={
-          navbar
-            ? "bg-blue-400 duration-300 fixed top-0 flex w-full  z-10 items-center py-2"
-            : "   duration-300 fixed top-0 flex w-full  z-10 items-center py-2 "
-        }
-        // className=" z-10 flex fixed justify-between sm:justify-start items-center w-full pt-3 bg-red-300 "
-      >
-        <div className="">
-          <div className=" sm:pl-12">
-            <img
-              src="/Main-Logo.png"
-              alt=""
-              className="w-40 sm:w-auto max-h-16"
-            />
-          </div>
-        </div>
-
-        <div className=" sm:hidden mr-4 flex justify-end w-full">
-          <button className="" onClick={() => setIsOpenMenu(true)}>
-            <GiHamburgerMenu size={40} color="white" />
+        <div className="sm:hidden">
+          <button onClick={() => setMenuOpen(true)}>
+            <GiHamburgerMenu size={30} color="#fff" />
           </button>
         </div>
 
-        <div className="hidden   text-white text-[8px] sm:text-sm  sm:flex justify-end gap-3 pr-8 w-full  ">
-          <p className="hover:cursor-pointer">
-            <Link to={"/"}>HOME</Link>
-          </p>
-
-          <div className=" relative group   ">
-            <p className="hover:cursor-pointer relative group hover:bg-white hover:text-black transition-all duration-200 px-2 group-hover:bg-white group-hover:text-black ">
-              SERVICES
-            </p>
-
-            <div className="text-xs pt-1 px-2 pb-1 text-black group-hover:bg-white gap-2.5 absolute transition-all duration-200 flex flex-col group  max-h-0 overflow-hidden group-hover:max-h-72 w-44 ">
-              <span className="hover:cursor-pointer">
-                <Link to={"/softwaredevelopment"}>SoftwareDevelopment</Link>
-              </span>
-              <span className="hover:cursor-pointer">Consultansy</span>
-              <span className="hover:cursor-pointer">Testing</span>
-              <span className="hover:cursor-pointer">Emerging</span>
-              <span className="hover:cursor-pointer">Cloud</span>
-              <span className="hover:cursor-pointer">Data Analytics</span>
-              <span className="hover:cursor-pointer">Staff Augmentation</span>
-              <span className="hover:cursor-pointer">
-                Projct Management Services
-              </span>
-            </div>
-          </div>
-
-          <div className=" relative group  ">
-            <p className="hover:cursor-pointer relative group hover:bg-white hover:text-black transition-all duration-100 px-2 group-hover:bg-white group-hover:text-black  ">
-              TECHNOLOGIES
-            </p>
-
-            <div className="text-xs pt-1 px-2 pb-1 text-black group-hover:bg-white gap-2.5 absolute transition-all duration-200 flex flex-col group  max-h-0 overflow-hidden group-hover:max-h-72 w-44 ">
-              <span className="hover:cursor-pointer">
-                <Link to={"/InternshipAndTraining"}>
-                  {" "}
-                  Internship & Training{" "}
+        {/* Desktop Nav */}
+        <nav className="hidden sm:flex items-center space-x-8 text-sm font-medium">
+          {navItems.map((item) => (
+            <div
+              key={item.name}
+              className="relative inline-flex flex-col"
+              onMouseEnter={() => handleMouseEnter(item.key)}
+              onMouseLeave={handleMouseLeave}
+            >
+              {item.submenu ? (
+                <>
+                  <button className="text-gray-300 hover:text-white hover:bg-gray-700 px-4 py-2 rounded transition">
+                    {item.name}
+                  </button>
+                  {hoveredDropdown === item.key && (
+                    <div className="absolute left-0 top-full mt-2 w-56 bg-gray-100/80 backdrop-blur-md shadow-lg rounded-md py-2 z-40 border border-gray-300 pointer-events-auto">
+                      {item.submenu.map((sub, i) => (
+                        <Link
+                          key={i}
+                          to={sub.path || "#"}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-700 hover:text-white transition"
+                          onClick={() => setHoveredDropdown(null)}
+                        >
+                          {sub.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </>
+              ) : (
+                <Link
+                  to={item.path}
+                  className="text-gray-300 hover:text-white hover:bg-gray-700 px-4 py-2 rounded transition"
+                >
+                  {item.name}
                 </Link>
-              </span>
-
-              <span className="hover:cursor-pointer">
-                <Link to={"/frontenddev"}> Front End Development </Link>
-              </span>
-              <span className="hover:cursor-pointer">
-                <Link to={"/backendDevlopment"}> Backend Devlopment </Link>
-              </span>
-              {/* <span className="hover:cursor-pointer">
-                Fullstack Development
-              </span> */}
-              <span className="hover:cursor-pointer">
-                <Link to={"/database"}> Database Management Services </Link>
-              </span>
-              <span className="hover:cursor-pointer">
-                <Link to={"/mobileappdev"}> Mobile App Development </Link>
-              </span>
-              {/* <span className="hover:cursor-pointer">Cloud and Infra</span> */}
-              {/* <span className="hover:cursor-pointer">
-                Data Analytics and Reporting
-              </span> */}
-              {/* <span className="hover:cursor-pointer">Ecommerce</span> */}
-              <span className="hover:cursor-pointer">
-                <Link to={"/qa"}>QA</Link>
-              </span>
+              )}
             </div>
-          </div>
-
-          <p>
-            <Link to={"/about"}> ABOUT </Link>
-          </p>
-
-          <div className=" relative group  ">
-            <p className="hover:cursor-pointer relative group hover:bg-white hover:text-black transition-all duration-300 px-2 group-hover:bg-white group-hover:text-black  ">
-              PRODUCTS
-            </p>
-
-            <div className="text-xs pt-1 px-2 pb-1 text-black group-hover:bg-white gap-2.5 absolute transition-all duration-700 flex flex-col group  max-h-0 overflow-hidden group-hover:max-h-72 w-44   ">
-              <span className="hover:cursor-pointer">Clients</span>
-              <span className="hover:cursor-pointer">Success Stories</span>
-              <span className="hover:cursor-pointer">Testimonials</span>
-              <span className="hover:cursor-pointer">More Case Studies</span>
-            </div>
-          </div>
-
-          <p>
-            <Link to={"/blog"}> BLOG </Link>
-          </p>
-          <p>
-            <Link to={"/contactus"}> CONTACT US </Link>
-          </p>
-        </div>
+          ))}
+        </nav>
       </div>
-    </div>
+
+      {/* Mobile Nav */}
+      {menuOpen && (
+        <div className="sm:hidden fixed inset-0 bg-slate-900 text-white z-40">
+          <div className="flex justify-end p-4">
+            <button onClick={closeMobileMenu}>
+              <ImCross size={24} />
+            </button>
+          </div>
+
+          <div className="flex flex-col gap-4 px-6 text-lg font-semibold">
+            {navItems.map((item) => (
+              <div key={item.name}>
+                {item.submenu ? (
+                  <>
+                    <button
+                      onClick={() => setHoveredDropdown(item.key)}
+                      className="w-full text-left"
+                    >
+                      {item.name}
+                    </button>
+                    {hoveredDropdown === item.key && (
+                      <div className="ml-4 mt-1 flex flex-col text-sm text-gray-300">
+                        {item.submenu.map((sub, i) => (
+                          <Link
+                            key={i}
+                            to={sub.path || "#"}
+                            className="py-1"
+                            onClick={closeMobileMenu}
+                          >
+                            {sub.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <Link to={item.path} onClick={closeMobileMenu}>
+                    {item.name}
+                  </Link>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </header>
   );
 };
 

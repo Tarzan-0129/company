@@ -2,34 +2,25 @@ import Nabbar from "./Nabbar";
 
 function HeroCarousel() {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="w-full h-screen overflow-hidden">
       <Nabbar />
-
-      {/* Background Video */}
-      <div className="absolute top-0 left-0 w-full h-full z-0">
-        <iframe
-          title="Gumlet clean video"
-          src="https://play.gumlet.io/embed/68207918a2826ae5397f2ec4?autoplay=true&mute=true&controls=false&loop=true&preload=metadata&background=1"
-          style={{
-            border: "none",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "50%",
-          }}
-          loading="lazy"
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-        ></iframe>
-      </div>
-
-      {/* Optional Overlay Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-white text-center h-full px-4">
-        <span className="text-4xl sm:text-5xl font-bold">
-          Junp into our world of opportunities
-        </span>
-    
+      <video
+        src="/assets/img/header.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+      />
+      <div className="relative z-10 flex items-center justify-center h-full">
+        <p className="mb-8 mt-6 text-white sm:text-4xl font-bold text-center px-5 w-md:max-w-xl">
+          <span className="text-blue-600">Empowering</span> Your Business
+          With our global network of specialized firms, we offer
+          <span className="font-bold">
+            human resources and workforce solutions that empower diversity,
+          </span>
+          ensure compliance, and drive business success.
+        </p>
       </div>
     </div>
   );

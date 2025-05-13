@@ -2,8 +2,11 @@ import React, { useEffect } from "react";
 import GetInTouch from "./GetInTouch";
 import Footer from "../Components/Footer";
 import Nabbar from "../Components/Nabbar";
+import { useNavigate } from "react-router-dom";
+
 
 const BackendDevlopment = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -11,11 +14,7 @@ const BackendDevlopment = () => {
     <>
       <Nabbar />
       <div className=" h-56 flex relative ">
-        <img
-          src="/Front-End-Dev-jpg/dowffnload.webp"
-          className=" w-full object-cover"
-          alt=""
-        />
+        <img src="/assets/img/frontend/dowffnload.webp" className=" w-full object-cover" />
 
         <div className="absolute text-white text-2xl font-semibold flex flex-col h-full justify-center text-center items-center w-full">
           <span className=" font-bold text-2xl text-white ">
@@ -33,11 +32,7 @@ const BackendDevlopment = () => {
       <div className=" flex flex-wrap">
         <div className="border  px-8  py-10 flex flex-col text-center sm:w-1/3 ">
           <div className="flex justify-center pb-1  h-44">
-            <img
-              className=" object-contain"
-              src="/BackEnd-Pics/215px-Go_Logo_Blue.svg.png"
-              alt=""
-            />
+            <img className="object-contain" src="/assets/img/backend/215px-Go_Logo_Blue.svg.png" />
           </div>
 
           <span className="py-4">
@@ -46,20 +41,11 @@ const BackendDevlopment = () => {
             choice for building web services, microservices, and cloud-native
             applications.
           </span>
-          <div className="flex justify-center">
-            <button className="rounded-3xl hover:bg-yellow-400 duration-500 border-gray-800 hover:text-white du border flex justify-center items-center py-2.5 w-3/5 ">
-              EXPLORE MORE
-            </button>
-          </div>
         </div>
 
         <div className="border   px-8  py-10 flex flex-col text-center  sm:w-1/3 ">
           <div className="flex justify-center pb-1  h-44">
-            <img
-              className=" object-contain"
-              src="/BackEnd-Pics/c-sharp-programming-language-icon.webp"
-              alt=""
-            />
+            <img className=" object-contain" src="/assets/img/backend/c-sharp-programming-language-icon.webp" />
           </div>
 
           <span className="py-4">
@@ -67,20 +53,11 @@ const BackendDevlopment = () => {
             a popular choice for building Windows applications, games, and web
             services. pen_spark
           </span>
-          <div className="flex justify-center">
-            <button className="rounded-3xl hover:bg-yellow-400 duration-500 border-gray-800 hover:text-white du border flex justify-center items-center py-2.5 w-3/5 ">
-              EXPLORE MORE
-            </button>
-          </div>
         </div>
 
         <div className="border  px-8  py-10 flex flex-col text-center sm:w-1/3 ">
           <div className="flex justify-center pb-1 h-44">
-            <img
-            className=" object-contain"
-              src="public/BackEnd-Pics/Java_programming_language_logo.svg.png"
-              alt=""
-            />
+            <img className=" object-contain" src="/assets/img/backend/Java_programming_language_logo.svg.png" />
           </div>
 
           <span className="py-4">
@@ -89,16 +66,11 @@ const BackendDevlopment = () => {
             Node.js is popular for real-time applications, single-page
             applications (SPAs) and I/O bound tasks.
           </span>
-          <div className="flex justify-center">
-            <button className="rounded-3xl hover:bg-yellow-400 duration-500 border-gray-800 hover:text-white du border flex justify-center items-center py-2.5 w-3/5 ">
-              EXPLORE MORE
-            </button>
-          </div>
         </div>
 
         <div className="border  px-8  py-10 flex flex-col text-center sm:w-1/3 ">
           <div className="flex justify-center pb-1 h-44">
-            <img src="public/BackEnd-Pics/JavaScript-logo.png" alt="" className=" object-contain" />
+            <img src="/assets/img/backend/JavaScript-logo.png" alt="" className=" object-contain" />
           </div>
 
           <span className="py-4">
@@ -107,16 +79,11 @@ const BackendDevlopment = () => {
             Node.js is popular for real-time applications, single-page
             applications (SPAs) and I/O bound tasks. pen_spark
           </span>
-          <div className="flex justify-center">
-            <button className="rounded-3xl hover:bg-yellow-400 duration-500 border-gray-800 hover:text-white du border flex justify-center items-center py-2.5 w-3/5 ">
-              EXPLORE MORE
-            </button>
-          </div>
         </div>
 
         <div className="border  px-8  py-10 flex flex-col text-center sm:w-1/3 ">
           <div className="flex justify-center pb-1 h-44">
-            <img src="public/BackEnd-Pics/PHP-logo.svg.png" alt="" className=" object-contain" />
+            <img src="/assets/img/backend/PHP-logo.svg.png" alt="" className=" object-contain" />
           </div>
 
           <span className="py-4">
@@ -125,16 +92,11 @@ const BackendDevlopment = () => {
             portion of the web including popular CMS systems like Wordpress.
             pen_spark
           </span>
-          <div className="flex justify-center">
-            <button className="rounded-3xl hover:bg-yellow-400 duration-500 border-gray-800 hover:text-white du border flex justify-center items-center py-2.5 w-3/5 ">
-              EXPLORE MORE
-            </button>
-          </div>
         </div>
 
         <div className="border  px-8  py-10 flex flex-col text-center sm:w-1/3 ">
           <div className="flex justify-center pb-1 h-44">
-            <img src="public/BackEnd-Pics/Python-logo-notext.svg.png" alt="" className=" object-contain" />
+            <img src="/assets/img/backend/Python-logo-notext.svg.png" alt="" className=" object-contain" />
           </div>
 
           <span className="py-4">
@@ -142,22 +104,16 @@ const BackendDevlopment = () => {
             vast array of libraries. Python is widely used in web development,
             data science, and machine learning.
           </span>
-          <div className="flex justify-center">
-            <button className="rounded-3xl hover:bg-yellow-400 duration-500 border-gray-800 hover:text-white du border flex justify-center items-center py-2.5 w-3/5 ">
-              EXPLORE MORE
-            </button>
-          </div>
         </div>
       </div>
 
       <div className="flex items-center  flex-col py-14 px-2 ">
         <span className="text-2xl">WANT TO START DISCUSSION?</span>
-        <div className="my-8 px-12 py-6  font-semibold text-lg bg-amber-500  flex justify-center rounded-3xl sm:w-3/12 border-2 border-amber-500 hover:bg-white duration-200 hover:text-amber-500">
-          <button>CONTACT US NOW</button>
+        <div className="my-8 px-12 py-6  font-semibold text-lg bg-amber-500  flex justify-center rounded-3xl sm:w-3/12 border-2 border-amber-500 hover:bg-white duration-200 hover:text-amber-500" onClick={() => navigate("/contactus")}>
+          <button >CONTACT US NOW</button>
         </div>
         <span className="text-lg">Related Case Studies</span>
       </div>
-
       <GetInTouch />
       <Footer />
     </>
