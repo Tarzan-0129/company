@@ -115,7 +115,7 @@ const InternshipAndTraining = () => {
           We have partnered with Thadomal Shahani Centre for Management (TSCFM)
           for delivering our skills and placement programs. Backed by 60 years
           of experience TSCFM, is a premier business institute ranked at no. 3
-          among colleges offering Global Business Courses in United States by Outlook
+          among colleges offering Global Business Courses in India by Outlook
           Magazine.
         </span>
         <span>

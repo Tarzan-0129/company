@@ -110,7 +110,6 @@ const About = () => {
           <p className="py-8">
             Our partners are leaders in their space and share the same passion
             as TechsavyPool.
-            as TechsavyPool.
           </p>
           <p className="text-gray-500 text-base">
             TechsavyPool has partnered with System Integrators, Interactive/Digital

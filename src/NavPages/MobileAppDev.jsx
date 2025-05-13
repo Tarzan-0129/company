@@ -3,13 +3,11 @@ import GetInTouch from "./GetInTouch";
 import Footer from "../Components/Footer";
 import Nabbar from "../Components/Nabbar";
 import { useNavigate } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 const MobileAppDev = () => {
   const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
 
 
   return (
